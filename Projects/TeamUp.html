@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamUp | Svar Pandya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="projectPageTemplate.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <nav>
+        <a href="../index.html" class="navbar">Svar</a>
+        <a href="../index.html#about" class="navbar">About</a>
+        <a href="../index.html#projects" class="navbar">Projects</a>
+        <a href="../index.html#techStack" class="navbar">Tech Stack</a>
+    </nav>
+
+    <table>
+        <tr>
+            <td style="width: 55%;">
+                <!-- 35% and then 65% for the next td -->
+                <img src="../images/TeamUpImages/mainPic.png" alt="Home Page/Open Requests" id="mainPic">
+            </td>
+            <td style="width: 45%;">
+
+                <h1>TeamUp <a href="https://github.com/SVPandya/teamup" target="_blank"><img src="../images/gi.png"
+                            alt="GitHub" id="githubLogo"></a></h1>
+                <div id="toolContainer">
+                    <p class="tools">PHP</p>
+                    <p class="tools">MySQL</p>
+                    <p class="tools">Google Places API</p>
+                </div>
+                <p>Everyone enjoys playing games, especially during the busy summer months. However, finding sports
+                    partners shouldn't be more challenging than the game itself. TeamUp was created to help users find
+                    one-time partners, whether they are new to town, their friends are busy, or they are simply looking
+                    for a challenge. In an increasingly digital world, TeamUp makes sports accessible again by building
+                    connections and encouraging users to stay active.
+                    <br><br>
+
+                    TeamUp enables users to find one-time sports partners based on skill level, age, and location. Users
+                    can input or browse requests for specific sports during their free time to find teammates and
+                    opponents, all without needing a full team's worth of people and equipment.
+                    <br><br>
+
+                </p>
+
+
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2" style="text-align: center; padding-top: 2em;">
+                <img src="../images/TeamUpImages/createForm.png" class="extra-img" alt="Create Request Form">
+                <img src="../images/TeamUpImages/signUp.png" class="extra-img" alt="User Sign Up Form">
+                <img src="../images/TeamUpImages/email.png" class="extra-img" alt="Email Notification">
+            </td>
+        </tr>
+
+    </table>
+
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script src="projects.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+:root {
+    --clr-1: #052b2f;
+    --clr-2: #073438;
+    --clr-3: #0e4b50;
+    --clr-4: #2d8f85;
+    --clr-5: #637c54;
+    --clr-6: #07383c;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* cursor: none; Uncomment this if you want the radial cursor back */
+}
+
+body {
+    margin: 3%;
+    padding: 0;
+    /* background-color: var(--clr-2); */
+    background: linear-gradient(-45deg,
+            #010f0d, #042a2c, #08363b, #116a72);
+
+
+    animation: gradient 8s ease infinite;
+    color: #F5F5F5;
+    font-family: "Roboto Flex";
+    background-size: 400% 400%;
+}
+
+
+
+
+
+
+
+
+h1 {
+    text-align: center;
+    /* margin-top: 4em; */
+    font-size: 400%;
+    /* height: calc(100vh - 50px - 11vh - 200px); */
+    /* background-color: blue; */
+    /* padding-top: 200px; */
+}
+
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin: auto;
+}
+
+
+
+
+
+
+a.proj {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: rgb(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 50px;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    font-size: 110%;
+    position: sticky;
+}
+
+.navbar {
+    color: #F5F5F5;
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+    margin: 6%;
+    font-weight: 300;
+}
+
+/* On hover, change color and move up */
+.navbar:hover {
+    /* color: var(--clr-4); */
+    color: transparent;
+    background: linear-gradient(-45deg, #216c5e, var(--clr-4), #4db7a6, #6ff0db, #4db7a6, var(--clr-4), #216c5e);
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background-clip: text;
+    /* Clip the gradient to the text */
+    -webkit-background-clip: text;
+    /* For WebKit browsers (Chrome, Safari) */
+    background-size: 400% 400%;
+    animation: gradient 2s ease infinite;
+    transform: translateY(-2px);
+    /* Move up */
+    /* cursor: none; Uncomment this if you want the radial cursor back */
+}
+
+
+
+
+/* .custom-cursor {
+    position: fixed;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    pointer-events: none;
+
+    background: radial-gradient(circle,
+            rgba(255, 255, 255, 0.05) 20%,
+            rgba(255, 255, 255, 0) 80%);
+
+    box-shadow: 0 0 40px 40px rgba(255, 255, 255, 0.2);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0s ease-out;
+
+    Uncomment this if you want the radial cursor back
+} */
+
+
+
+
+
+
+
+
+/* body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+} */
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+#mainPic {
+    /* height: 900%; */
+    /* width: 200%; */
+    /* height: 200%; */
+
+    /* width: 600px;
+    height: 600px; */
+    width: 90%;
+    height: 44vh;
+    /* height: 200%; */
+    object-fit: cover;
+    margin: 7%;
+    border-radius: 10px;
+}
+
+p {
+    margin: 7%;
+}
+
+
+
+td {
+    vertical-align: top;
+}
+
+img {
+    transition: box-shadow 0.2s ease;
+}
+
+img:hover {
+    box-shadow:
+        /* 0 0 6px #38BDF8,
+        0 0 12px 4px #38BDF8; */
+        0 0 6px var(--clr-4),
+        0 0 12px 4px var(--clr-4);
+}
+
+#githubLogo {
+    width: 60px;
+    transition: transform 0.2s ease;
+}
+
+#githubLogo:hover {
+    /* cursor: none; Uncomment this if you want the radial cursor back */
+    transform: translateY(-4px);
+    box-shadow: none;
+}
+
+.extra-img {
+    /* width: 30%;
+    margin: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; */
+    width: 30%;
+    height: 30vh;
+    object-fit: cover;
+    margin: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /*
+    
+    width: 90%;
+    height: 50vh;
+    object-fit: cover;
+    margin: 7%;
+     */
+}
+
+.extra-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px var(--clr-4);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #fff;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tools {
+    display: inline;
+    background-color: var(--clr-3);
+    border-radius: 50px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 3px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+
+}
+
+#toolContainer {
+    display: block;
+    text-align: center;
+    border-radius: 50px;
+    padding: 2%;
+}
